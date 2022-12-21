@@ -1,0 +1,7 @@
+package com.springbook.biz.injection;
+
+import java.util.List;
+
+public class CollectionBean {
+	private List<String> addressList;
+}

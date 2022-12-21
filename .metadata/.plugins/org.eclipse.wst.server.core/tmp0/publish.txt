@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Fri Dec 16 17:29:19 KST 2022
+org.eclipse.jst.jee.server\:test01=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\test01
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\test01\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar

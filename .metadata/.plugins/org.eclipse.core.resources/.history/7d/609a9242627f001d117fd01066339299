@@ -1,0 +1,20 @@
+package polymorphism;
+
+public class LgTV implements TV {
+	@Override
+	public void powerOn() {
+		System.out.println("SamsungTV---전원 켠다.");
+	}
+	@Override
+	public void powerOff() {
+		System.out.println("SamsungTV---전원 끊다");
+	}
+	@Override
+	public void volumeUP() {
+		System.out.println("SamsungTV---소리 올린다.");
+	}
+	@Override
+	public void volumeDonw() {
+		System.out.println("SamsungTV---소리 내린다.");
+	}
+}

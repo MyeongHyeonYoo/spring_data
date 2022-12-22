@@ -1,0 +1,9 @@
+package com.springbook.biz.user.impl;
+
+public class UserServiceImpl {
+	private UserDAO userDAO;
+	
+	public void setUserDAO(UserDAO userDAO) {
+		this.userDAO = userDAO;
+	}
+}

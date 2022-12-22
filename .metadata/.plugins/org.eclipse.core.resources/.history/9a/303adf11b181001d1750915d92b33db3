@@ -1,0 +1,8 @@
+package com.springbook.biz.board;
+
+// VO(value Object)
+public class BoardVO {
+	private int seq;
+	private String title;
+	private String
+}

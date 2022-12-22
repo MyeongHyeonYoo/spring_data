@@ -1,0 +1,7 @@
+package com.springbook.biz.board;
+
+//VO(value Object)
+public class BoardVO {
+	
+	
+}

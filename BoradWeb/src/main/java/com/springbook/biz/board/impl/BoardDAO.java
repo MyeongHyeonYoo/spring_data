@@ -106,7 +106,7 @@ public class BoardDAO {
 	
 	// 글 목록 조회
 	public List<BoardVO> getBoardList(BoardVO vo) {
-		System.out.println("===> JDBC로 getBoard() 기능 처리");
+		System.out.println("===> JDBC로 getBoardList() 기능 처리");
 		List<BoardVO> boardList = new ArrayList<BoardVO>();
 		try {
 			conn =JDBCUtil.getConnection();

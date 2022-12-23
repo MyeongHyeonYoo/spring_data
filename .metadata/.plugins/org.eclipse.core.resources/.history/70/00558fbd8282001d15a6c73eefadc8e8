@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:p="http://www.springframework.org/schema/p"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd">
+
+	<context:component-scan base-package="com.springbook.biz">
+	</context:component-scan>
+	
+	<bean id="log" class="com.springbook.biz.common.LogAdvice"></bean>
+	<aop:config>
+		<aop:pointcut id="allPointcut" expression="execution(*  com.springbook.biz..*Impl.*(..))"/>
+		
+		<aop:pointcut id="getPointcut" expression="execution(*  com.springbook.biz..*Impl.get*(..))"/>
+		
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="allPointcut" method="printLog" />
+		</aop:aspect>
+		
+		<aop:aspect ref="log">
+			<aop:before pointcut-ref="getPointcut" method="printLogging" />
+		</aop:aspect>
+	</aop:config>
+
+<!-- 	<bean id="userService" class="com.springbook.biz.user.impl.UserServiceImpl">
+		<property name="userDAO" ref="userDAO" />
+	</bean>
+	
+	<bean id="userDAO" class="com.springbook.biz.user.impl.UserDAO"/> -->
+
+	<!-- <context:component-scan base-package="polymorphism" />
+	<bean class="polymorphism.SonySpeaker" /> -->
+
+ 	<!-- List 타입 매핑 -->
+<!-- 	<bean id="collectionBean" 
+		  class="com.springbook.ioc.injection.CollectionBean">
+		<property name="addressList">
+			<list>
+				<value>서울시 강남구 역삼동</value>
+				<value>서울시 강남구 행담동</value>
+				<value>안산시 단원구</value>
+				<value>안산시 상록구</value>
+				<value>인천시</value>
+			</list>
+		</property>
+	</bean> -->
+	
+	<!-- Set 타입 매핑 -->
+<!-- 	<bean id="collectionBean" 
+		  class="com.springbook.ioc.injection.CollectionBean">
+		<property name="addressList">
+			<set value-type="java.lang.String">
+				<value>서울시 강남구 역삼동</value>
+				<value>서울시 강남구 행담동</value>
+				<value>안산시 단원구</value>
+				<value>안산시 상록구</value>
+				<value>인천시</value>
+			</set>
+		</property>
+	</bean> -->
+	
+	<!-- Map 타입 매핑 -->
+<!-- 	<bean id="collectionBean" 
+		  class="com.springbook.ioc.injection.CollectionBean">
+		<property name="addressList">
+			<map>
+				<entry>
+					<key><value>고길동</value></key>
+					<value>서울시 강남구 역삼동</value>
+				</entry>
+				<entry>
+					<key><value>마이콜</value></key>
+					<value>서울시 강서구 화곡동</value>
+				</entry>	
+			</map>
+		</property>
+	</bean> -->
+	
+	<!-- Properties 타입 매핑 -->
+	<!-- <bean id="collectionBean" 
+		  class="com.springbook.ioc.injection.CollectionBean">
+		<property name="addressList">
+			<props>
+				<prop key="고길동">서울시 강남구 역삼동</prop>
+				<prop key="마이콜">서울시 강서구 화곡동</prop>
+			</props>
+		</property>
+	</bean>  -->
+</beans>

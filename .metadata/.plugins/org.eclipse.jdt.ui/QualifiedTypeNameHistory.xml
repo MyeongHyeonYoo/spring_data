@@ -14,9 +14,15 @@
     <fullyQualifiedTypeName name="java.lang.Override"/>
     <fullyQualifiedTypeName name="java.sql.DriverManager"/>
     <fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
-    <fullyQualifiedTypeName name="com.springbook.biz.common.JDBCUtil"/>
     <fullyQualifiedTypeName name="com.springbook.biz.board.impl.BoardDAO"/>
     <fullyQualifiedTypeName name="com.springbook.biz.board.BoardVO"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="com.springbook.biz.board.BoardService"/>
+    <fullyQualifiedTypeName name="com.springbook.biz.common.JDBCUtil"/>
+    <fullyQualifiedTypeName name="org.eclipse.jdt.internal.compiler.classfmt.FieldInfoWithAnnotation"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+    <fullyQualifiedTypeName name="com.springbook.biz.user.UserService"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="com.springbook.biz.common.Log4jAdvice"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Pointcut"/>
+    <fullyQualifiedTypeName name="org.aspectj.lang.annotation.Before"/>
 </qualifiedTypeNameHistroy>

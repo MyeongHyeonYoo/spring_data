@@ -8,18 +8,21 @@
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="action"/>
+			<item value="WEB-INF"/>
+			<item value="web"/>
+			<item value="log4j"/>
+			<item value="apache"/>
+			<item value="log4"/>
+			<item value="setseq"/>
+			<item value="글등록"/>
 			<item value="springco"/>
 			<item value="aspec"/>
 			<item value="test"/>
 			<item value="conn"/>
 			<item value="spring"/>
 			<item value="modelVersion"/>
-			<item value="log4"/>
 			<item value="log"/>
-			<item value="lom"/>
-			<item value="lobock"/>
-			<item value="jst"/>
-			<item value="jst\"/>
 		</list>
 		<list key="replacehistory">
 		</list>

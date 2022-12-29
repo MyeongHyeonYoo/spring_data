@@ -2,8 +2,9 @@ package com.springbook.biz.board;
 
 import java.sql.Date;
 
-// VO(value Object)
+// VO(Value Object)
 public class BoardVO {
+
 	private int seq;
 	private String title;
 	private String writer;
@@ -50,6 +51,8 @@ public class BoardVO {
 	
 	@Override
 	public String toString() {
-		return "BoardVO [seq=" + seq + ", title=" + title + ", writer=" + writer + ", content=" + content + ", regDate=" + regDate + ", cnt=" + cnt + "]";
+		return "BoardVO [seq=" + seq + ", title=" + title + ", writer=" + writer + ", content=" + content + ", regDate="
+				+ regDate + ", cnt=" + cnt + "]";
 	}
+	
 }

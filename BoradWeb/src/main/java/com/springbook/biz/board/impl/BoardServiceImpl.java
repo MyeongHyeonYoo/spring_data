@@ -9,15 +9,11 @@ import com.springbook.biz.board.BoardService;
 import com.springbook.biz.board.BoardVO;
 
 @Service("boardService")
-public class BoardServiceImpl implements BoardService {
+public class BoardServiceImpl implements BoardService{
+	
 	@Autowired
-	private BoardDAO boardDAO; 
-//	private Log4jAdvice log;
-	
-//	public BoardServiceImpl() {
-//		log = new Log4jAdvice();
-//	}
-	
+	private BoardDAO boardDAO;
+
 	@Override
 	public void insertBoard(BoardVO vo) {
 		boardDAO.insertBoard(vo);
@@ -25,7 +21,7 @@ public class BoardServiceImpl implements BoardService {
 	}
 
 	@Override
-	public void updatetBoard(BoardVO vo) {
+	public void updateBoard(BoardVO vo) {
 		boardDAO.updateBoard(vo);
 		
 	}
@@ -39,7 +35,6 @@ public class BoardServiceImpl implements BoardService {
 	@Override
 	public BoardVO getBoard(BoardVO vo) {
 		return boardDAO.getBoard(vo);
-
 	}
 
 	@Override

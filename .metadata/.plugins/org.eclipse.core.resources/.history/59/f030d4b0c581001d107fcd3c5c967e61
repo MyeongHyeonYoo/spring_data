@@ -1,8 +1,0 @@
-package com.springbook.biz.board.impl;
-
-import org.springframework.stereotype.Service;
-
-@Service("boardService")
-public class BoardServiceImpl{
-	
-}

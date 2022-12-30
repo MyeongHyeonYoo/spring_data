@@ -1,3 +1,4 @@
 #Tomcat publish data
-#Thu Dec 29 13:17:58 KST 2022
-org.eclipse.jst.jee.server\:BoradWeb=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\BoradWeb
+#Fri Dec 30 14:00:08 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\Users\\505\\.m2\\repository\\org\\springframework\\spring-web\\5.0.7.RELEASE\\spring-web-5.0.7.RELEASE.jar=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\ex00\\WEB-INF\\lib\\spring-web-5.0.7.RELEASE.jar
+org.eclipse.jst.jee.server\:ex00=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\ex00

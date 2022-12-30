@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="Test"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="test"/>
+			<item value="tomcat"/>
+			<item value="tom"/>
+			<item value="maven"/>
+			<item value="lombok"/>
+			<item value="log4"/>
+			<item value="org."/>
+			<item value="Log4"/>
+			<item value="Log"/>
+			<item value="log"/>
 			<item value="action"/>
 			<item value="WEB-INF"/>
 			<item value="web"/>
 			<item value="log4j"/>
 			<item value="apache"/>
-			<item value="log4"/>
-			<item value="setseq"/>
-			<item value="글등록"/>
-			<item value="springco"/>
-			<item value="aspec"/>
-			<item value="test"/>
-			<item value="conn"/>
-			<item value="spring"/>
-			<item value="modelVersion"/>
-			<item value="log"/>
 		</list>
 		<list key="replacehistory">
 		</list>

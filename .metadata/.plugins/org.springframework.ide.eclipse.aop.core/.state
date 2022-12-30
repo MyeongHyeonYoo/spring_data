@@ -19,5 +19,6 @@
 <aop-reference advice-type="BEFORE" bean="1:BeansModel|2:BoradWeb|3:src/main/resources/applicationContext.xml|7:beans:9|8:userService:9" bean-file="/BoradWeb/src/main/resources/applicationContext.xml" bean-start-line="9" factory-id="org.springframework.ide.eclipse.aop.core.aopReferenceElementFactory" file="/BoradWeb/src/main/resources/applicationContext.xml" source="=BoradWeb/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springbook.biz.common{BeforeAdvice.java[BeforeAdvice~pointLog~QJoinPoint;" source-start-line="16" target="=BoradWeb/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;com.springbook.biz.user.impl{UserServiceImpl.java[UserServiceImpl~getUser~QUserVO;" target-start-line="18"/>
 </aspect-definition>
 </aop-project>
+<aop-project name="ex00"/>
 <aop-project name="test_test"/>
 </aop-reference-model>

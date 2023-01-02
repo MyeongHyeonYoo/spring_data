@@ -1,10 +1,6 @@
 INDEX VERSION 1.4+D:\ymh_data\spr_data\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
-2193098144.index
-3271193799.index
-1943763642.index
-2074955485.index
-1512662918.index
 2487545169.index
 3759172240.index
-3385066451.index
-3909751375.index
+2074955485.index
+3812875719.index
+3271193799.index

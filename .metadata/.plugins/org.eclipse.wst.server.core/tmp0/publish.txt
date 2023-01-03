@@ -1,3 +1,2 @@
 #Tomcat publish data
-#Mon Jan 02 14:10:24 KST 2023
-org.eclipse.jst.jee.server\:ex01=D\:\\ymh_data\\spr_data\\apache-tomcat-9.0.55_s\\wtpwebapps\\ex01
+#Tue Jan 03 15:02:06 KST 2023

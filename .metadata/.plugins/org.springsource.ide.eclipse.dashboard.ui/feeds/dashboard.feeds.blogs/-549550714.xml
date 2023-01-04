@@ -5,7 +5,37 @@
   <link rel="self" href="https://spring.io/blog.atom" />
   <id>http://spring.io/blog.atom</id>
   <icon>https://spring.io/favicon.ico</icon>
-  <updated>2023-01-03T08:00:00Z</updated>
+  <updated>2023-01-03T19:00:00Z</updated>
+  <entry>
+    <title>Spring Tools 4.17.1 released</title>
+    <link rel="alternate" href="https://spring.io/blog/2023/01/03/spring-tools-4-17-1-released" />
+    <category term="releases" label="Releases" />
+    <author>
+      <name>Martin Lippert</name>
+    </author>
+    <id>tag:spring.io,2023-01-03:5050</id>
+    <updated>2023-01-03T19:00:00Z</updated>
+    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
+&lt;p&gt;I am happy to announce the 4.17.1 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: Eclipse STS 4.17 takes 96 % processor time on Intel i9 (&lt;a href="https://github.com/spring-projects/sts4/issues/934"&gt;#934&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: BootLanguageServerBootApp class is taking all available cpu continuously (&lt;a href="https://github.com/spring-projects/sts4/issues/932"&gt;#932&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: OpenRewrite unchecked, but always Language Server Background Job(Loading Rewrite Recipes) (&lt;a href="https://github.com/spring-projects/sts4/issues/925"&gt;#925&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt; fixed: [validation] spring.factories EnableAutoConfiguration key for boot 3.0 ignores &amp;lsquo;on&amp;rsquo; setting (&lt;a href="https://github.com/spring-projects/sts4/issues/917"&gt;#917&lt;/a&gt;)&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;(VSCode)&lt;/em&gt; fixed: [vscode] Boot LS is broken if Java LS launch mode is &amp;lsquo;Hybrid&amp;rsquo; (&lt;a href="https://github.com/spring-projects/sts4/issues/919"&gt;#919&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;&lt;h4&gt;&lt;a href="#known-issues" class="anchor" name="known-issues"&gt;&lt;/a&gt;known issues&lt;/h4&gt;
+&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;(Spring Boot)&lt;/em&gt;: The newly introduced additional reconciling for Java source files which is used to show up additional validations and quick fixes can cause increased memory and CPU consumption. In case you stumble upon issues in this area, feel free to disable the reconciling via &lt;code&gt;Preferences -&amp;gt; Extensions -&amp;gt; Spring Boot Tools -&amp;gt; Open Rewrite&lt;/code&gt; (in VSCode) or &lt;code&gt;Preferences -&amp;gt; Language Servers -&amp;gt; Spring Language Servers -&amp;gt; Spring Boot Language Server -&amp;gt; Open Rewrite&lt;/code&gt; (in Eclipse).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2023-01-03-4171-release-incl-language-servers-version-1430"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2023-01-03-4171-release-incl-language-servers-version-1430&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Spring Tools 4.17.2 is scheduled to be released in early February 2023.&lt;/p&gt;
+&lt;p&gt;Enjoy!&lt;/p&gt;
+&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
+  </entry>
   <entry>
     <title>This Week in Spring - Jan 3rd, 2023</title>
     <link rel="alternate" href="https://spring.io/blog/2023/01/03/this-week-in-spring-jan-3rd-2023" />
@@ -657,36 +687,6 @@ dependencyManagement {&#xD;
   &lt;li&gt;Wire Spring applications to &lt;a href="https://learn.microsoft.com/en-us/azure/developer/java/spring-framework/"&gt;interact with Azure services&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;For feedback and questions, &lt;a href="mailto:AzureSpringCloud-Talk@service.microsoft.com"&gt;please e-mail us.&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
-&lt;!-- rendered by Sagan Renderer Service --&gt;</content>
-  </entry>
-  <entry>
-    <title>Spring Tools 4.17.0 released</title>
-    <link rel="alternate" href="https://spring.io/blog/2022/12/07/spring-tools-4-17-0-released" />
-    <category term="releases" label="Releases" />
-    <author>
-      <name>Martin Lippert</name>
-    </author>
-    <id>tag:spring.io,2022-12-07:5030</id>
-    <updated>2022-12-07T16:00:00Z</updated>
-    <content type="html">&lt;p&gt;Dear Spring Community,&lt;/p&gt;
-&lt;p&gt;I am happy to announce the 4.17.0 release of the Spring Tools 4 for Eclipse, Visual Studio Code, and Theia.&lt;/p&gt;&lt;h4&gt;&lt;a href="#major-changes-to-the-spring-tools-4-for-eclipse-distribution" class="anchor" name="major-changes-to-the-spring-tools-4-for-eclipse-distribution"&gt;&lt;/a&gt;major changes to the Spring Tools 4 for Eclipse distribution&lt;/h4&gt;
-&lt;ul&gt;
-  &lt;li&gt;updated to Eclipse 2022-12 release (&lt;a href="https://eclipseide.org/release/noteworthy/"&gt;new and noteworthy&lt;/a&gt;)&lt;/li&gt;
-&lt;/ul&gt;&lt;h4&gt;&lt;a href="#early-access-to-new-experimental-features" class="anchor" name="early-access-to-new-experimental-features"&gt;&lt;/a&gt;early access to new experimental features&lt;/h4&gt;
-&lt;p&gt;Among a number of bug fixes and minor improvements, this release introduces experimental support for:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Boot version validations: The IDE will tell you when there is a newer major, minor, or patch version available for your Spring Boot project&lt;/li&gt;
-  &lt;li&gt;Spring Boot upgrade support: The tooling will help you upgrading your existing projects to newer Spring Boot versions, including upgrades to newer patch and minor versions, as well as newer major versions (e.g. upgrading to Spring Boot 3)&lt;/li&gt;
-  &lt;li&gt;Spring specific validations and refactorings: The tooling will indicate whether something can or should be changed in your source code to keep your Spring project up-to-date with the latest recommendations or advancements in Spring&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;To learn more about these new experimental features, please take a look at the user guide: &lt;a href="https://github.com/spring-projects/sts4/wiki/"&gt;https://github.com/spring-projects/sts4/wiki/&lt;/a&gt;&lt;br/&gt;And we would like to hear from you. Please let us know if you come across any issues or have thoughts and wishes for further improvements in this space: &lt;a href="https://github.com/spring-projects/sts4/issues"&gt;https://github.com/spring-projects/sts4/issues&lt;/a&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href="#fixes-and-improvements" class="anchor" name="fixes-and-improvements"&gt;&lt;/a&gt;fixes and improvements&lt;/h4&gt;
-&lt;p&gt;Detailed changes can be found here: &lt;a href="https://github.com/spring-projects/sts4/wiki/Changelog#2022-12-07-4170-release-incl-language-servers-version-1410"&gt;https://github.com/spring-projects/sts4/wiki/Changelog#2022-12-07-4170-release-incl-language-servers-version-1410&lt;/a&gt;&lt;/p&gt;&lt;h4&gt;&lt;a href="#downloads" class="anchor" name="downloads"&gt;&lt;/a&gt;downloads&lt;/h4&gt;
-&lt;p&gt;To download the distribution for Eclipse and find links to the marketplace entries for Visual Studio Code and Theia, please go visit:&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;Spring Tools 4: &lt;a href="https://spring.io/tools/"&gt;https://spring.io/tools/&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Spring Tools 4.17.1 is scheduled to be released in early Febuary 2023.&lt;/p&gt;
-&lt;p&gt;Enjoy!&lt;/p&gt;
 &lt;!-- rendered by Sagan Renderer Service --&gt;</content>
   </entry>
 </feed>

@@ -17,6 +17,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\ThisIsJavaSecondEdition\eclipse-workspace\spr_data"/>
 			<item value="D:\ymh_data\spr_data\bookShop01"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

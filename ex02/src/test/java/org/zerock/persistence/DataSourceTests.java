@@ -1,6 +1,6 @@
 package org.zerock.persistence;
 
-import static org.junit.jupiter.api.Assertions.fail;
+import static org.junit.Assert.fail;
 
 import java.sql.Connection;
 
@@ -20,31 +20,29 @@ import lombok.extern.log4j.Log4j;
 @ContextConfiguration("file:src/main/webapp/WEB-INF/spring/root-context.xml")
 @Log4j
 public class DataSourceTests {
-	
 	@Autowired
 	private DataSource dataSource;
-	
+
 	@Autowired
 	private SqlSessionFactory sqlSessionFactory;
-	
+
 	@Test
 	public void testMyBatis() {
-		try (SqlSession session = sqlSessionFactory.openSession();
-			Connection con = session.getConnection();	
-			) {
+		try (SqlSession session = sqlSessionFactory.openSession(); Connection con = session.getConnection()) {
 			log.info(session);
 			log.info(con);
 		} catch (Exception e) {
 			fail(e.getMessage());
 		}
 	}
-	
+
 	@Test
-	public void testConnction() {
+	public void testConnection() {
 		try (Connection con = dataSource.getConnection()) {
 			log.info(con);
 		} catch (Exception e) {
 			fail(e.getMessage());
 		}
 	}
+
 }
